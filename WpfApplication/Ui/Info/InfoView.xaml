@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApplication.Ui.Info.InfoView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication.Ui.Info"
+        xmlns:designViewModels="clr-namespace:WpfApplication.Ui.Info.DesignViewModels"
+        mc:Ignorable="d"
+        Title="InfoView" Height="300" Width="300"
+        WindowStartupLocation="CenterOwner">
+    <d:DesignProperties.DataContext>
+        <designViewModels:InfoDesignViewModel/>
+    </d:DesignProperties.DataContext>
+    <Grid>
+        <Label Content="{Binding Path=ExampleContent}"></Label>
+    </Grid>
+</Window>
